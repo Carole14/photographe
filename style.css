@@ -15,6 +15,8 @@ header {
     margin: 0;
     background-repeat:no-repeat;
     background-size:cover;
+
+    
 }
 
 h1 {
@@ -34,11 +36,9 @@ h2 {
 }
 
 .bienvenue {
-    text-align: center;
     color: #DBD3C9;
-    padding: 2rem;
-    vertical-align: center;
-    margin: auto;
+    text-align:center; 
+    padding: 14rem;
 }
 
 
@@ -59,7 +59,12 @@ h2 {
     position:absolute;
     text-align : center;
     color: #FAD4D8;
-    padding: 4rem;
+    padding: 0.5rem;
+    left: 0;
+    right: 0;
+    background-color:#88A0A8;
+    
+
     
 }
 
