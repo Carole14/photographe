@@ -27,6 +27,15 @@ h2 {
     font-family: 'Nunito Sans', serif;
 }
 
+ul {
+    text-align: center;
+    list-style-type: none;
+}
+
+li {
+    margin: 10px 0;
+}
+
 .navbar-brand {
     color: #FAD4D8;
 }
@@ -63,6 +72,7 @@ h2 {
     left: 0;
     right: 0;
     background-color:#88A0A8;
+    padding: 0.2rem;
     
 
     
@@ -72,12 +82,13 @@ h2 {
     text-align : center;
     color: #FAD4D8;
     background-color: #88A0A8;
+    padding: 0.2rem;
     
 }
 
 .formulaire {
     text-align: center;
-    margin: 3rem;
+    margin: 2rem;
 }
 
 .email {
@@ -86,14 +97,11 @@ h2 {
     padding: 5rem;
 }
 
-.course {
-    color: #462255;
-    padding: 1rem;
+.tarifs {
+    color: #FAD4D8;
+    padding: 2rem;
     text-align: center;
 }
-.parc {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 1rem;
+.liste {
+   padding: 2rem;
 }
