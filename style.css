@@ -1,0 +1,94 @@
+header {
+    background-color: #88A0A8;
+    
+}
+
+.body {
+    background-color: #B4CEB3;
+    overflow: hidden scroll;
+    font-family: 'Nunito Sans', sans-serif;
+   
+}
+
+.accueil {
+    background-image: url(image/accueil.jpg);
+    margin: 0;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+h1 {
+    font-family: 'PT Serif', serif;
+}
+
+h2 {
+    font-family: 'Nunito Sans', serif;
+}
+
+.navbar-brand {
+    color: #FAD4D8;
+}
+
+.nav-link {
+    color: #FAD4D8;
+}
+
+.bienvenue {
+    text-align: center;
+    color: #DBD3C9;
+    padding: 2rem;
+    vertical-align: center;
+    margin: auto;
+}
+
+
+.contact {
+    color: #FAD4D8;
+    text-align : center;
+    padding: 2rem;
+}
+
+.galerie {
+    color: #DBD3C9;
+    text-align : center;
+    padding: 2rem;
+}
+
+.footer {
+    bottom:0;
+    position:absolute;
+    text-align : center;
+    color: #FAD4D8;
+    padding: 4rem;
+    
+}
+
+.foot {
+    text-align : center;
+    color: #FAD4D8;
+    background-color: #88A0A8;
+    
+}
+
+.formulaire {
+    text-align: center;
+    margin: 3rem;
+}
+
+.email {
+    
+    text-align: center;
+    padding: 5rem;
+}
+
+.course {
+    color: #462255;
+    padding: 1rem;
+    text-align: center;
+}
+.parc {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1rem;
+}
