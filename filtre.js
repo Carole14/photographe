@@ -9,31 +9,31 @@
     //construction d'une expression régulière
     if(val =='') {
         $('#filter li').show();
-        $('#filter a').removeClass('highlited');
+        $('#filter span').removeClass('highlighted');
         return true;
     }
-    var regexp = '\\b(.*)';
+    var regexp ='\\b(.*)';
     for(var i in val){
-        regexp += '('+val[i]+')(.*)';
+        regexp +='('+val[i]+')(.*)';
     }
     regexp += '//b';
     $('#filter li').show();
-    $('#filter').find('a').each(function(){
-        var a = $(this);
-        var resultats = a.text().match(new RegExp(regexp,'i'));
+    $('#filter').find('a>span').each(function(){
+        var span = $(this);
+        var resultats = span.text().match(new RegExp(regexp,'i'));
        if(resultats) {
            var string = '';
     for (var i in resultats){
         if (i > 0) {
           if(i%2 == 0){
-              string +='<a class="highlighted">'+resultats[i]+'<a>';
+              string +='<span class="highlighted">'+resultats[i]+'<span>';
           }  else{
         string += resultats[i];
     }
        }}
-       a.empty().append(string);
+       span.empty().append(string);
     }else {
-        a.parent().hide();
+        span.parent().parent().hide();
     }
     })
     });
