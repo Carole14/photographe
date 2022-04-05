@@ -9,7 +9,7 @@
     //construction d'une expression régulière
     if(val =='') {
         $('#filter li').show();
-        $('#filter span').removeClass('highlighted');
+        $('#filter a').removeClass('highlighted');
         return true;
     }
     var regexp ='\\b(.*)';
@@ -18,22 +18,22 @@
     }
     regexp += '//b';
     $('#filter li').show();
-    $('#filter').find('a>span').each(function(){
-        var span = $(this);
-        var resultats = span.text().match(new RegExp(regexp,'i'));
+    $('#filter').find('a').each(function(){
+        var a = $(this);
+        var resultats = a.text().match(new RegExp(regexp,'i'));
        if(resultats) {
            var string = '';
     for (var i in resultats){
         if (i > 0) {
           if(i%2 == 0){
-              string +='<span class="highlighted">'+resultats[i]+'<span>';
+              string +='<a class="highlighted">'+resultats[i]+'<a>';
           }  else{
         string += resultats[i];
     }
        }}
-       span.empty().append(string);
+       a.empty().append(string);
     }else {
-        span.parent().parent().hide();
+        a.parent().hide();
     }
     })
     });
