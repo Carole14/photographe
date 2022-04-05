@@ -12,12 +12,12 @@
         $('#filter a').removeClass('highlighted');
         return true;
     }
-    var regexp ='\\b(.*)';
-    for(var i in val){
-        regexp +='('+val[i]+')(.*)';
-    }
-    regexp += '//b';
-    $('#filter li').show();
+   var regexp ='\\b(.*)';
+   for (var i in val) {
+       regexp += '('+val[i]+')(.*)'
+   }
+   regexp += '\\b';
+   
     $('#filter').find('a').each(function(){
         var a = $(this);
         var resultats = a.text().match(new RegExp(regexp,'i'));
