@@ -33,18 +33,15 @@
                         highlighted{background-color: #2BA6CB; color: #FFF}
                         </style>          
 </header>
-<main>
-    <section class="banner"></section>
-    <section class="search"><input value="Rechercher..." type="text" /></section>
-    </main>
 <body class = "body">
     <h1 class = "galerie" id = "galerie">Galerie</h1>
-    <div class = "row">
-        <label for = "">Rechercher une catégorie</label>
+        <label for = "">Rechercher</label>
         <input type = "text" name = "category" id = "categoryFilter" placeholder = "trouver une catégorie">
-        <ul class = "filter side-nav row" id= "filter">
-        <li><a>mariage</a>
+        <ul class = "filter side-nav" id= "filter">
+            <div class = "row">
+        <li>
             <img class= "col-4" src = "image/mariage.jpg" alt = "Mariage">
+            <a>mariage</a>
             </li>  
          <li>
             <img class= "col-4" src = "image/grossesse.jpg" alt = "Grossesse">      
@@ -52,7 +49,7 @@
         <li>
             <img class= "col-4" src = "image/bébé.jpg" alt = "Bébé">   
             <a>bébé</a></li>
-            <div class = "row">
+        
         <li>
             <img class= "col-4" src = "image/famille.jpg" alt = "Famille">   
             <a>famille</a></li>
@@ -64,7 +61,7 @@
             <a>couple</a></li>
         </ul>
         </div>
-            </div>
+            
             <script type="text/javascript" src="filtre.js"></script>
 </body>
 <footer class = foot>
