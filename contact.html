@@ -34,12 +34,19 @@
 
 <body class = "body">
     <h1 class = "contact">Contact</h1>
-    <h2 class = "formulaire">Veuillez entrer votre e-mail et je vous contacterai</h2>
-    <form class= "email" action="https://formspree.io/f/{form_id}" method="post">
-        <label for="email">Your Email</label>
-        <input name="Email" id="email" type="email">
-        <button type="submit">Submit</button>
+    <div class = "container">
+    <div class = "row">
+    <img class= "col-2" src = "image/logo.png" alt = "logo"> 
+    <h2 class = "col-10">Veuillez entrer votre e-mail et je vous contacterai</h2>
+</div>
+    <div class = "row">
+    <form class= "mail col-12" method="POST" data-netlify="true">
+        <label for="email" class="email">Votre mail</label>
+        <input name="Email" id="email" type="email" placeholder ="mail">
+        <button type="submit">Envoyer</button>
       </form>
+      </div>
+    </div>
 </body>
 
 <footer class= footer>
